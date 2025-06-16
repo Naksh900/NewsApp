@@ -8,7 +8,7 @@ const News = (props) => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
-  const [totalResults, setTotalResults] = useState(0);
+  const [totalArticles, setTotalArticles] = useState(0);
   const [hasMore, setHasMore] = useState(true);
 
   const capitalizeFirstLetter = (string) => {
@@ -19,12 +19,14 @@ const News = (props) => {
   useEffect(() => {
     const fetchInitialNews = async () => {
       setLoading(true);
-      const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&sortBy=popularity&category=${props.category}&apiKey=${props.apiKey}&page=1&pageSize=${props.pageSize}`;
+      const url = `https://gnews.io/api/v4/top-headlines?category=${props.category}&apikey=${props.apiKey}&lang=en&country=${props.country}&max=${props.pageSize}&page=1`;
+      console.log("Fetching URL:", url);
       let data = await fetch(url);
       let parsedData = await data.json();
+      console.log("Fetched Data:", parsedData);
 
       setArticles(parsedData.articles || []);
-      setTotalResults(parsedData.totalResults || 0);
+      setTotalArticles(parsedData.totalArticles || 0);
       setPage(1);
       setHasMore((parsedData.articles?.length || 0) > 0);
       setLoading(false);
@@ -36,7 +38,7 @@ const News = (props) => {
 
   const fetchMoreData = async () => {
     const nextPage = page + 1;
-    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&sortBy=popularity&category=${props.category}&apiKey=${props.apiKey}&page=${nextPage}&pageSize=${props.pageSize}`;
+    const url = `https://gnews.io/api/v4/top-headlines?category=${props.category}&apikey=${props.apiKey}&lang=en&country=${props.country}&max=${props.pageSize}&page=${nextPage}`;
     let data = await fetch(url);
     let parsedData = await data.json();
 
@@ -44,7 +46,7 @@ const News = (props) => {
 
     if (
       newArticles.length === 0 ||
-      articles.length + newArticles.length >= totalResults
+      articles.length + newArticles.length >= totalArticles
     ) {
       setHasMore(false);
     }
@@ -89,12 +91,12 @@ const News = (props) => {
                       : ""
                   }
                   imageUrl={
-                    element.urlToImage
-                      ? element.urlToImage
+                    element.image
+                      ? element.image
                       : "https://upload.wikimedia.org/wikipedia/commons/7/75/No_image_available.png"
                   }
                   newsUrl={element.url}
-                  author={element.author}
+                  author={element.source.name}
                   date={element.publishedAt}
                 />
               </div>
@@ -107,7 +109,7 @@ const News = (props) => {
 };
 
 News.defaultProps = {
-  country: "in",
+  country: "us",  
   pageSize: 8,
   category: "general",
 };

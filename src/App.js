@@ -15,10 +15,8 @@ const App = (props) => {
     color: "white",
     backgroundColor: "#532920",
     padding: "10px",
-    fontFamily: "'sans-serif"
-  }
-
-  
+    fontFamily: "'sans-serif",
+  };
 
   return (
     <div style={myStyle}>
@@ -26,6 +24,20 @@ const App = (props) => {
         <Navbar />
 
         <Routes>
+          <Route
+            exact
+            path="/"
+            element={
+              <News
+                key="home"
+                pageSize={9}
+                country="us"
+                apiKey={apiKey}
+                category="general"
+                style={myStyle}
+              />
+            }
+          />
           <Route
             exact
             path="/general"

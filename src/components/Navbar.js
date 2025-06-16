@@ -27,7 +27,7 @@ const Navbar = () => {
     <div >
       <nav className="navbar fixed-top navbar-expand-lg py-1" style={myStyleNav}>
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/" style={{color:"#f8d5cf", fontWeight:"bold"}}>
+          <Link className="navbar-brand" to="/general" style={{color:"#f8d5cf", fontWeight:"bold"}}>
             NewsGrid
           </Link>
           <button
