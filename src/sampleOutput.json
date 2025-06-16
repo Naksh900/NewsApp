@@ -1,0 +1,46 @@
+{
+  "status": "ok",
+  "totalResults": 4,
+  "articles": [
+    {
+      "source": { "id": "bbc-sport", "name": "BBC Sport" },
+      "author": null,
+      "title": "Test cricket: Is longest format financially viable?",
+      "description": "As Australia and South Africa contest the World Test Championship final, BBC Sport addresses the longer format’s future financial viability.",
+      "url": "http://www.bbc.co.uk/sport/cricket/articles/c8re683rdp5o",
+      "urlToImage": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/0bda/live/41645f40-46b4-11f0-bbaa-4bc03e0665b7.png",
+      "publishedAt": "2025-06-11T14:22:26.7678786Z",
+      "content": "For players from England, Australia and India, playing Test cricket is financially rewarding.\r\nBen Stokes, England's Test captain, has a central contract reportedly worth £2.47m a year with the Engla… [+2213 chars]"
+    },
+    {
+      "source": { "id": "news-com-au", "name": "News.com.au" },
+      "author": "James Dampney",
+      "title": "Cricket says same thing on South Africa star",
+      "description": "Controversial South African quick Kagiso Rabada has ignited a gloomy start to the World Test Championship final against Australia at Lord’s.",
+      "url": "https://www.news.com.au/sport/cricket/cricket-world-says-same-thing-on-south-africa-star-kagiso-rabada/news-story/b7f38873b2986c64dd2fcc9787cc22ab",
+      "urlToImage": "https://content.api.news/v3/images/bin/a7e2580086f6fa912a22884622e8029a",
+      "publishedAt": "2025-06-11T11:18:00Z",
+      "content": "Controversial South African quick Kagiso Rabada has ignited a gloomy start to the World Test Championship final against Australia at Lord’s.\r\nLate in the first session of the opening day in London, A… [+5605 chars]"
+    },
+    {
+      "source": { "id": "espn-cric-info", "name": "ESPN Cric Info" },
+      "author": null,
+      "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
+      "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
+      "url": "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
+      "publishedAt": "2020-04-27T11:41:47Z",
+      "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
+    },
+    {
+      "source": { "id": "espn-cric-info", "name": "ESPN Cric Info" },
+      "author": null,
+      "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
+      "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
+      "url": "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
+      "publishedAt": "2020-03-30T15:26:05Z",
+      "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
+    }
+  ]
+}
