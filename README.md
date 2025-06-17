@@ -45,4 +45,61 @@ NewsGrid is a fully responsive, single-page React application that delivers the 
 ---
 
 ##  Project Structure
+```
+newsgrid/
+├── netlify/
+│ └── functions/
+│ └── news.js
+├── public/
+│ ├── index.html 
+│ ├── favicon.ico 
+│ ├── logo192.png
+│ ├── logo512.png
+│ ├── manifest.json
+│ └── robots.txt
+├── src/
+│ ├── components/
+│ │ ├── Navbar.js 
+│ │ └── News.js 
+│ ├── NewsItem.js
+│ ├── App.js 
+│ ├── App.css 
+│ ├── index.js 
+│ └── index.css 
+├── .gitignore
+├── netlify.toml 
+├── package.json
+└── README.md
+```
+## Local Development
+### 1. Clone the Repository
 
+```bash
+git clone https://github.com/05-Jagritii/NewsApp.git
+cd NewsApp
+```
+### 2. Install Dependencies
+```bash
+npm install
+```
+### 3. Get Your NewsAPI Key
+Visit https://gnews.io/
+<br/>
+Sign up and copy your API key
+### 4. Create `.env` File
+```bash
+REACT_APP_NEWS_API=your_api_key_here
+```
+Make sure `.env` is included in `.gitignore`.
+### 5. Start the Dev Server
+```bash
+npm run start
+```
+App runs on `http://localhost:3000`
+
+## Author
+Jagriti Kanwar
+<br>
+Mail : [kanwarjagriti21@gmail.com ](mailto:kanwarjagriti21@gmail.com)
+<br>
+LinkedIn : [Jagriti Kanwar](https://www.linkedin.com/in/jagriti-kanwar)
