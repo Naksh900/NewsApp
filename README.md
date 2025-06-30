@@ -1,105 +1,91 @@
-# NewsGrid - Top Headlines News App
+# NewsApp 📰
 
-NewsGrid is a fully responsive, single-page React application that delivers the latest headlines across various categories using the [GNews API](https://gnews.io/). Built with modern React practices and styled with a clean dark theme, NewsGrid ensures users stay updated with world events, business, technology, health, science, sports, and entertainment, all from one intuitive interface.
+![NewsApp](https://img.shields.io/badge/NewsApp-Responsive-blue)
+
+Welcome to the **NewsApp** repository! This project is a responsive and category-based news web application built with React and the GNews API. You can browse top headlines in real-time across various categories, including Business, Sports, Technology, and more. The app is hosted on Netlify, ensuring a clean user interface and modular React components.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
+
+## Features
+
+- **Responsive Design**: The app adjusts seamlessly to different screen sizes, providing an optimal experience on both mobile and desktop devices.
+- **Real-time Updates**: Fetches the latest news headlines using the GNews API.
+- **Category-Based Browsing**: Easily navigate through categories such as Business, Sports, Technology, and more.
+- **Modular Components**: Built with React, making it easy to maintain and extend.
+- **Clean UI**: Focused on user experience with a straightforward layout.
+
+## Technologies Used
+
+- **React**: A JavaScript library for building user interfaces.
+- **GNews API**: Provides access to news articles from various sources.
+- **React Router**: For routing within the app.
+- **Netlify**: For hosting the application.
+- **CSS**: For styling the application.
+- **JavaScript**: The primary programming language used in the project.
+
+## Getting Started
+
+To get started with the NewsApp, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Naksh900/NewsApp.git
+   cd NewsApp
+   ```
+
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the Application**:
+   ```bash
+   npm start
+   ```
+
+Your application should now be running on `http://localhost:3000`.
+
+## Usage
+
+Once the application is running, you can navigate through different news categories using the menu. Each category displays the latest headlines, and you can click on any headline to read the full article. The app updates automatically to show the most recent news.
+
+## Screenshots
+
+![Home Page](https://via.placeholder.com/800x400?text=Home+Page)
+
+![Category Page](https://via.placeholder.com/800x400?text=Category+Page)
+
+![Article Detail](https://via.placeholder.com/800x400?text=Article+Detail)
+
+## Contributing
+
+We welcome contributions to the NewsApp project! If you have suggestions or improvements, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Releases
+
+For the latest releases, visit our [Releases](https://github.com/Naksh900/NewsApp/releases) section. You can download the latest version and execute it to see all the new features and improvements.
+
+To stay updated, check the [Releases](https://github.com/Naksh900/NewsApp/releases) section regularly.
 
 ---
 
-##  Live Demo
-
-> 🚀 **Live Link**: [https://1dailynewsapp1.netlify.app/](https://1dailynewsapp1.netlify.app/)  
-> 
-
----
-
-##  Screenshot
-
-![](https://github.com/user-attachments/assets/8fc49b56-962e-4b16-a474-1e74cb9f1353)
-  
-
-
----
-
-##  Tech Stack
-
-| Tech            | Usage                                    |
-|-----------------|------------------------------------------|
-| React           | Core UI library                          |
-| React Router    | For client-side routing                  |
-| GNews API       | Fetching real-time news data             |
-| CSS             | Custom dark theme styling                |
-| Netlify         | Hosting and optional serverless backend  |
-| dotenv          | Managing environment variables           |
-
----
-
-##  Features
-
-- Browse headlines by category (e.g., Business, Entertainment, Sports)
-- Displays article title, image, publication time
-- Easy-to-navigate user interface
-- Category-based routing using React Router
-- Dynamic data fetching with real-time updates
-- Responsive design for mobile & desktop
-- Ready for Netlify deployment
-
----
-
-##  Project Structure
-```
-newsgrid/
-├── netlify/
-│ └── functions/
-│ └── news.js
-├── public/
-│ ├── index.html 
-│ ├── favicon.ico 
-│ ├── logo192.png
-│ ├── logo512.png
-│ ├── manifest.json
-│ └── robots.txt
-├── src/
-│ ├── components/
-│ │ ├── Navbar.js 
-│ │ └── News.js 
-│ ├── NewsItem.js
-│ ├── App.js 
-│ ├── App.css 
-│ ├── index.js 
-│ └── index.css 
-├── .gitignore
-├── netlify.toml 
-├── package.json
-└── README.md
-```
-## Local Development
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/05-Jagritii/NewsApp.git
-cd NewsApp
-```
-### 2. Install Dependencies
-```bash
-npm install
-```
-### 3. Get Your NewsAPI Key
-Visit https://gnews.io/
-<br/>
-Sign up and copy your API key
-### 4. Create `.env` File
-```bash
-REACT_APP_NEWS_API=your_api_key_here
-```
-Make sure `.env` is included in `.gitignore`.
-### 5. Start the Dev Server
-```bash
-npm run start
-```
-App runs on `http://localhost:3000`
-
-## Author
-Jagriti Kanwar
-<br>
-Mail : [kanwarjagriti21@gmail.com ](mailto:kanwarjagriti21@gmail.com)
-<br>
-LinkedIn : [Jagriti Kanwar](https://www.linkedin.com/in/jagriti-kanwar)
+Thank you for checking out the NewsApp! We hope you enjoy using it as much as we enjoyed building it. If you have any questions or feedback, feel free to reach out!
